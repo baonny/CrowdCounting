@@ -1,0 +1,26 @@
+This is the App Created by Jan using Tkinter and Open CV
+
+To set up on your Computer:
+
+  1. Download app, model and resultGenerator
+  
+  2. complete a developer import of ultralytics (more details found here: https://docs.ultralytics.com/quickstart/)
+    git clone https://github.com/ultralytics/ultralytics
+    cd ultralytics
+    pip install -e '.[dev]'
+    
+  3. find the predictor.py file in the ultralytics folder that should have appeared in your directory
+  
+  4. replace the code with the code I put in the customPredictor
+  
+  5. Run app.py and you're all good to go!
+  
+Let me know if you have any questions.
+
+improvements:
+  - Train on Custom Data
+  - Make the GUI nicer
+  - Add a function to end the livestream and return similar results to a video
+  - Add high and low numbers for videos
+ 
+ Please add any other potential improvements you guys think would be good!
