@@ -3,7 +3,7 @@ from ultralytics import YOLO
 from io import StringIO
 from resultgenerator import generatelist, generateResults
 
-model = YOLO("yolov8s.pt")
+model = YOLO("yolov8x.pt")
 
 def run(file):
     if file == 0:
@@ -21,7 +21,7 @@ def run(file):
     frameCount = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
     cap.release()
 
-    model.predict(source=source, show=True, classes=0, conf= 0.4)
+    model.predict(source=source, show=True, classes=0, conf= 0.1)
 
     rawText = redirected_output.getvalue()
     sys.stdout = original_stdout
